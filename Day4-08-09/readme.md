@@ -5,4 +5,4 @@
 | JSON Problems   | Content Cell  |
 | error handling to the xmlhttprequest code | Content Cell  |
 | Convert the ppt into a writeup | Content Cell  |
-| JS Common errors and explanations | Content Cell  |
+| JS Common errors and explanations | [a relative link](other_file.md) |
