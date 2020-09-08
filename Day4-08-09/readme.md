@@ -2,10 +2,11 @@
 | Task Given | File/ Folder Link |
 | ------------- | ------------- |
 | Difference between window, screen, and document in Javascript  | [window, document, screen.pdf](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Window%2C%20Document%2C%20Screen.pdf)  |
-| JSON Problems   | Content Cell  |
-| error handling to the xmlhttprequest code | Content Cell  |
-| Convert the ppt into a writeup | Content Cell  |
+| JSON Problems   | [Problems Folder](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day4-08-09/JS%20Objects)  |
+| error handling to the xmlhttprequest code | [errorHandling.js](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/errorHandlingRequest.js)  |
+| Convert the ppt into a writeup | [JS Communication Errors.pdf](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Communication%20Errors_.pdf)  |
+
 | JS Common errors and explanations | [a relative link](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Find%20the%20fix.pdf) |
-| Callback function task | Content Cell  |
-| Zen Warmup Tasks | Content Cell  |
-| Programs using anonymous functions & IIFE | Content Cell  |
+| Callback function task | [callback.js](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/callbackTask.js)  |
+| Zen Warmup Tasks | [warmup problems Folder](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day4-08-09/WarmupTasks)  |
+| Programs using anonymous functions & IIFE | [Anonymous functions and IIFE Solutions](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day4-08-09/Anonymous%20Function%20and%20IIFE)  |
