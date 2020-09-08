@@ -1,5 +1,8 @@
 
-| First Header  | Second Header |
+| Task Given | File/ Folder Name |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| difference between window, screen, and document in Javascript  | Content Cell  |
+| JSON Problems   | Content Cell  |
+| error handling to the xmlhttprequest code | Content Cell  |
+| Convert the ppt into a writeup | Content Cell  |
+| JS Common errors and explanations | Content Cell  |
