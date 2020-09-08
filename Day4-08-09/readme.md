@@ -5,7 +5,7 @@
 | JSON Problems   | [Problems Folder](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day4-08-09/JS%20Objects)  |
 | error handling to the xmlhttprequest code | [errorHandling.js](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/errorHandlingRequest.js)|
 | Convert the ppt into a writeup | [JS Communication Errors.pdf](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Communication%20Errors_.pdf)|
-| JS Common errors and explanations | [a relative link](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Find%20the%20fix.pdf) |
+| JS Common errors and explanations | [Errors.pdf](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Find%20the%20fix.pdf) |
 | Callback function task | [callback.js](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/callbackTask.js)  |
 | Zen Warmup Tasks | [warmup problems Folder](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day4-08-09/WarmupTasks)  |
 | Programs using anonymous functions & IIFE | [Anonymous functions and IIFE Solutions](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day4-08-09/Anonymous%20Function%20and%20IIFE)  |
