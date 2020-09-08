@@ -4,9 +4,8 @@ function assertObjectsEqual(actual, expected, testName){
     if (JSON.stringify(expected) === JSON.stringify(actual)){
         console.log('Passed')
     } else{
-        console.log(`FAILED ${testName} Expected ${expected}, but got ${actual}}`)
+        console.log(`FAILED ${testName} Expected ${JSON.stringify(expected)}, but got ${JSON.stringify(actual)}`)
     }
 }
 
 assertObjectsEqual(actual, expected, 'detects that two objects are equal');
-console.log(expected)
