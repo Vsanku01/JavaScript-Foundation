@@ -1,7 +1,7 @@
 
-| Task Given | File/ Folder Name |
+| Task Given | File/ Folder Link |
 | ------------- | ------------- |
-| Difference between window, screen, and document in Javascript  | [window, document, screen](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Window%2C%20Document%2C%20Screen.pdf)  |
+| Difference between window, screen, and document in Javascript  | [window, document, screen.pdf](https://github.com/Vsanku01/JavaScript-Foundation/blob/master/Day4-08-09/Window%2C%20Document%2C%20Screen.pdf)  |
 | JSON Problems   | Content Cell  |
 | error handling to the xmlhttprequest code | Content Cell  |
 | Convert the ppt into a writeup | Content Cell  |
