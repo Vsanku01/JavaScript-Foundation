@@ -1,6 +1,6 @@
 let arr = ['abba', 'geeks'];
 
-var res = (arr) => {
+var palindromeStrings = (arr) => {
   res = [];
   for (str of arr) {
     if (str == str.split('').reverse().join('')) {
@@ -10,4 +10,4 @@ var res = (arr) => {
   return res;
 };
 
-console.log('Palindromic String in the given array: ', res(arr));
+console.log('Palindromic String in the given array: ', palindromeStrings(arr));

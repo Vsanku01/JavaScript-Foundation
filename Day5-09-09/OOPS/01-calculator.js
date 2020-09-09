@@ -1,9 +1,11 @@
 class Calculator {
   constructor(_number1, _number2) {
+    // properties
     this.number1 = _number1;
     this.number2 = _number2;
   }
 
+  // methods
   addition() {
     return this.number1 + this.number2;
   }
