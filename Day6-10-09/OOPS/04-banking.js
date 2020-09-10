@@ -1,3 +1,4 @@
+// Base Class
 class Bank {
   constructor(_code, _address) {
     this.codes = _code;
@@ -11,6 +12,7 @@ class Bank {
   }
 }
 
+// Base Class
 class ATM {
   constructor(_location, _managedby) {
     this.location = _location;
@@ -18,6 +20,7 @@ class ATM {
   }
 }
 
+// Child Class
 class Customer extends ATM {
   constructor(_name, _address, _dob, _cardNumber, _pin) {
     this.name = _name;
@@ -46,6 +49,7 @@ class ATMTransactions {
   }
 }
 
+// Base Class
 class Account {
   constructor(_number, _balance) {
     this.number = _number;
@@ -63,6 +67,7 @@ class Account {
   }
 }
 
+// Child Class
 class currentAccount extends Account {
   constructor(_accountNo, _balance) {
     this.accountNo = _accountNo;
@@ -73,6 +78,7 @@ class currentAccount extends Account {
   }
 }
 
+// Child Class
 class SavingAccount extends Account {
   constructor(_accountNo, _balance) {
     this.accountNo = _accountNo;
