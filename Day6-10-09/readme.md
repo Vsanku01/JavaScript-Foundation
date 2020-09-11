@@ -1,5 +1,5 @@
 
-# Day 5
+# Day 6
 | Task Given | File/ Folder Link |
 | ------------- | ------------- |
 | 1. OOPS Problems   | [Problems Folder](https://github.com/Vsanku01/JavaScript-Foundation/tree/master/Day6-10-09/OOPS)  |
