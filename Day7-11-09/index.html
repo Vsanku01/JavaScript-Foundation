@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAN </title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<style>
+		.indigo > a{
+			color: white;
+
+		}
+	</style>
+</head>
+<body>
+  <nav class = 'indigo darken-3'>
+    <div class=" container nav-wrapper">
+      <a href="index.html" class="brand-logo white-text">PAN Registration</a>
+    </div>
+  </nav>
+
+  <div class = 'card-container'>
+      <div class = 'form-container sign-in-container'>
+          <form action="">
+              <h4>Individual PAN Form</h4>
+              <br>
+              <!-- 1 -->
+              <div class = 'form-style row s12 l6 black-text' style="display: inline-flex; align-items: baseline; align-content: space-between;">  
+                <h6 style="margin-right: 10px;">Whether citizen of India</h6>
+                <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Yes</span>
+                    </label>
+                  </p> 
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>No</span>
+                    </label>
+                  </p>                             
+            </div>
+<br>
+<hr>
+            <!-- PAN Number-->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Permanent Account Number</h6>
+                <input type="text" name="text" placeholder="First Name" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+            <!-- 3 -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline; flex-direction: column;">  
+                <h6 style="margin-right: 10px;">1. Name</h6>
+                <div>
+                    <h6>Title</h6>
+                    <label>
+                        <input name="group1" type="radio" />
+                        <span>Shri/Mr</span>
+                      </label>
+                    
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Smt./Mrs.</span>
+                      </label>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Kumari/Ms</span>
+                      </label>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>M/s</span>
+                      </label>
+                </div>                          
+            </div>
+            <hr>
+            <!-- LastName/SurName -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Last Name/ Surname</h6>
+                <input type="text" name="text" placeholder="LastName" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>    
+
+                <h6 style="margin-right: 10px;">FirstName</h6>
+                <input type="text" name="text" placeholder="First Name" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>  
+
+                <h6 style="margin-right: 10px;">Middle Name</h6>
+                <input type="text" name="text" placeholder="Middle Name" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>                            
+            </div>
+            <hr>
+            <!-- Nam as you would... -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">* Name as you would like it printed on the card (Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)</h6>
+                <input type="text" name="text" placeholder="First Name" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+            <!-- Details of parents -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Details of Parents. (Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed.)</h6>                           
+            </div>
+            <hr>
+            <!-- Single Parent-->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">	Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother on</h6> 
+                
+                <label>
+                    <input name="group1" type="radio" />
+                    <span>Yes</span>
+                  </label>
+                
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>No</span>
+                  </label>
+            </div>
+            <hr>
+
+            <!-- Father Name -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6>*Father's Name(Mandatory field. Even married women should give father's name only.)</h6>
+                <br>
+                <h6 style="margin-left: 10px;margin-right: 10px;">Last Name/ Surname</h6>
+                <input type="text" name="text" placeholder="LastName" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>    
+
+                <h6 style="margin-right: 10px;">FirstName</h6>
+                <input type="text" name="text" placeholder="First Name" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>  
+
+                <h6 style="margin-right: 10px;">Middle Name</h6>
+                <input type="text" name="text" placeholder="Middle Name" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>                            
+            </div>
+            <hr>
+            <!-- Mother Name -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6>Mother's Name(This field is optional.)</h6>
+                <br>
+                <h6 style="margin-left: 10px;margin-right: 10px;">Last Name/ Surname</h6>
+                <input type="text" name="text" placeholder="LastName" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>    
+
+                <h6 style="margin-right: 10px;">FirstName</h6>
+                <input type="text" name="text" placeholder="First Name" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>  
+
+                <h6 style="margin-right: 10px;">Middle Name</h6>
+                <input type="text" name="text" placeholder="Middle Name" class='col s12 l5' style="margin-right: 20px !important;  width: 150px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- Select Parent -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <div style="display: flex; flex-direction: column;">
+                <h6 style="margin-right: 10px;">*4. Select Parent name which is to be printed on the card</h6> 
+                <p style="margin-right: 10px;">(In case no option is provided then PAN card will be issued with father's name)</p> 
+            </div>
+                <label>
+                    <input name="group1" type="radio" />
+                    <span>Father Name</span>
+                  </label>
+                
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Mother Name</span>
+                  </label>
+            </div>
+            <hr>
+
+            <!-- Date of Birth -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">* 5. Date of Birth/Incorporation/Agreement/Partnership
+                    or Trust Deed/Formation of Body of Individuals/
+                    Association of Persons</h6> 
+                                <label for="birthday">DD/ MM / YYYY:</label>
+            <input type="date" id="birthday" name="birthday" style="margin-right: 20px !important;  width: 250px !important" required>
+            </div>
+            <hr>
+
+            <!-- Gender -->
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">*6. Gender</h6> 
+                    <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>Male</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>Female</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>TransGender</span>
+                        </label>
+                      </p>
+            </div>
+            <hr>
+
+            <!-- Photo Mismatch -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">*7. Photo Mismatch</h6> 
+            </div>
+            <hr>
+            <!-- Signature  -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">*8. Signature Mismatch</h6> 
+            </div>
+            <hr>
+            <!-- Address for Communication -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">*9.Address for Communication</h6> 
+                    <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>Residential</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>Office</span>
+                        </label>
+                      </p>
+            </div>
+            <hr>
+
+            <!-- Office Name -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Office Name</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+            <!-- Flat/Door/Block -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Flat/Door/Block No.</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- Name of premises -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Name of Premises/Building/Village</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- Road/Street/Lane -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Road/Street/Lane/Post Office</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- Area/Locality -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">	Area/Locality/Taluka/Sub-Division</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- Town/City -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Town/City/District</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- State/Union -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">State/Union Territory</h6>
+                    <select class="white">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Andaman & Nicobar Islands</option>
+                      <option value="2">Andhra Pradesh</option>
+                      <option value="3">Arunachal Pradesh</option>
+                    </select>
+                    <label>Materialize Select</label>                     
+            </div>
+            <hr>
+
+            <!--PIN  -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">PIN (Indicating PIN is mandatory)</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>                            
+            </div>
+            <hr>
+
+            <!-- Country -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">Country</h6>
+                    <select class="white">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">India</option>
+                      <option value="2">Canada</option>
+                      <option value="3">America</option>
+                    </select>
+                    <label>Materialize Select</label>                     
+            </div>
+            <hr>
+            <!-- Zip -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">Zip</h6>                  
+            </div>
+            <hr>
+
+            <!-- Desire to update -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">10. If you desire to update your other address, give required details & Submit proof of other address also.</h6>                  
+            </div>
+            <hr>
+
+            <!-- Telephone Number -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: center;">  
+                <h6 style="margin-right: 10px;"> 11 .Telephone No.
+                    (Country code is compulsory)</h6>
+                    <div style="display: flex; flex-direction: column; align-items: baseline;">
+                        <h6 style="margin-right: 10px;">Country code (ISD code)</h6>
+                        <select class="white">
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="1">India(+91)</option>
+                            <option value="2">Canada(+24)</option>
+                            <option value="3">America(+32)</option>
+                          </select>
+
+                          <div style="display: flex; align-items: baseline;">
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" />
+                              <span>Mobile No</span>
+                            </label>
+                          </p>
+                          <h6 style="margin-left: 20px; margin-right: 10px;">Area/ STD Code</h6>
+
+                          <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>  
+                        </div>
+
+                        <div style="display: flex; align-items: baseline;">
+                            <p>
+                              <label>
+                                <input name="group1" type="radio" />
+                                <span>Telephone No.</span>
+                              </label>
+                            </p>
+                            <h6 style="margin-left: 20px; margin-right: 10px;">Telephone No./Mobile No.
+                            </h6>
+  
+                            <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>  
+                          </div> 
+                  
+                </div>      
+
+            </div>
+            <hr>
+
+            <!-- In case of citizen -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">*In case of a citizen of India, then</h6> 
+                    <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>AADHAAR</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>EID</span>
+                        </label>
+                      </p>
+            </div>
+            <hr>
+
+            <!-- AADHAAR NUMBER -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">AADHAAR Number: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>    
+                    <label>Materialize Select</label>
+                    <p style="margin-left: 20px;">	
+                        In case AADHAAR number is provided,
+                        then proof of AADHAAR along with supporting documents is to be submitted to NSDL</p>              
+            </div>
+            <hr>
+
+            <!-- Name as per AADHAAR -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">* Name as per AADHAAR letter
+                    or
+                    as per the enrollment ID of Aadhaar application form: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>             
+            </div>
+            <hr>
+
+            <!-- GSTN -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">GSTN</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>             
+            </div>
+            <hr>
+            <!-- Mention other payments -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">10. If you desire to update your other address, give required details & Submit proof of other address also.</h6>                  
+            </div>
+            <hr>
+
+            <!-- PAN1,2,3,4 -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">PAN1: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 100px !important ; height:30px !important" required>      
+                
+                
+                <h6 style="margin-right: 10px;">PAN2: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 100px !important ; height:30px !important" required>
+
+                <h6 style="margin-right: 10px;">PAN3: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 100px !important ; height:30px !important" required>  
+
+
+                <h6 style="margin-right: 10px;">PAN4: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 100px !important ; height:30px !important" required>  
+
+
+            </div>
+            <hr>
+
+            <!-- Declaration -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline; flex-flow: row wrap;"> 
+                <h6 style="margin-right: 10px;">I/ We</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 300px !important ; height:30px !important" required>
+                <h6 style="margin-right: 10px;">,the applicant,in the capacity of</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 300px !important ; height:30px !important" required>
+                <h6 style="margin-right: 10px;">do hereby declare that what is stated above is true to the best of my information and belief.</h6>
+
+                <h6 style="margin-right: 10px;">I have enclosed</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 50px !important ; height:30px !important" required>
+
+                <h6 style="margin-right: 10px;"> (number of documents) in support of proposed changes/corrections.</h6>
+            </div>
+            <hr>
+
+            <!-- Place -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">Place: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 200px !important ; height:30px !important" required>      
+            </div>
+            <hr>
+
+            <!-- Enclosed -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline; flex-flow: row wrap;"> 
+                <h6 style="margin-right: 10px;">I/We have enclosed : </h6>
+                <select class="white">
+                    <option value="" disabled selected> -- Please Select -- </option>
+                    <option value="1">Copy of Passport</option>
+                    <option value="2">Copy of Person of Indian Origin Card issued by Government of India</option>
+                    <option value="3">Copy of Person of Overseas Origin Card issued by Government of India</option>
+                  </select>  
+
+                <h6 style="margin-right: 10px;">as a proof of identity</h6>  
+                <select class="white">
+                    <option value="" disabled selected> -- Please Select -- </option>
+                    <option value="1">Copy of Passport</option>
+                    <option value="2">Copy of Person of Indian Origin Card issued by Government of India</option>
+                    <option value="3">Copy of Person of Overseas Origin Card issued by Government of India</option>
+                  </select>  
+
+
+                  <h6 style="margin-right: 10px;"> as proof of address,</h6>  
+                  <select class="white">
+                      <option value="" disabled selected> -- Please Select -- </option>
+                      <option value="1">Copy of Passport</option>
+                      <option value="2">Copy of Person of Indian Origin Card issued by Government of India</option>
+                      <option value="3">Copy of Person of Overseas Origin Card issued by Government of India</option>
+                    </select>  
+
+
+                    <h6 style="margin-right: 10px;"> as proof of date of birth and,</h6>  
+                    <select class="white">
+                        <option value="" disabled selected> -- Please Select -- </option>
+                        <option value="1">Copy of Passport</option>
+                        <option value="2">Copy of Person of Indian Origin Card issued by Government of India</option>
+                        <option value="3">Copy of Person of Overseas Origin Card issued by Government of India</option>
+                      </select> 
+                    
+                      <h6 style="margin-right: 10px;"> as proof of PAN alloted.</h6> 
+
+
+            </div>
+            <hr>
+
+            <!-- Whether you wish to have -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;">  
+                <h6 style="margin-right: 10px;">Whether you wish to have?  </h6> 
+                    <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>Physical PAN Card & e-PAN Card </span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input name="group1" type="radio" />
+                          <span>Only e-PAN Card</span>
+                        </label>
+                      </p>
+
+                      <h6 style="margin-left: 10px"> <b> <u>Fees Applicable</u></b></h6>
+            </div>
+            <hr>
+
+            <!-- Other Details -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h5 style="margin-right: 10px;">Other Details</h5>
+            </div>
+            <hr>
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">1.Depository Account Details</h6>
+            </div>
+            <hr>
+
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">DP ID</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>  
+                <h6 style="margin-right: 10px;">Client ID</h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>  
+            </div>
+            <hr>
+
+            <!-- Payment Details -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">2. Payment Details</h6>
+                <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Online Payment</span>
+                    </label>
+                  </p>
+            </div>
+            <hr>
+
+            <!-- For Paperless PAN -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">For Paperless PAN Application:</h6>
+                <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Yes</span>
+                    </label>
+                  </p>
+                <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>No</span>
+                    </label>
+                  </p>
+            </div>
+
+            <!-- DSC -->
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">DSC:</h6>
+                <select class="white">
+                    <option value="" disabled selected> -- Select -- </option>
+                    <option value="1">Minor</option>
+                    <option value="2">Lunatic/ Idiot</option>
+                    <option value="3">Self</option>
+                  </select>
+
+                  <h6 style="margin-right: 10px;"><u>Guidelines for DSC user</u></h6>
+            </div>
+
+            <!-- Upload Photo/ Doc -->
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">Upload Photo: </h6>
+                <input type="file" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required> 
+
+                <h6 style="margin-right: 10px;">Upload Signature: </h6>
+                <input type="file" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>  
+
+
+
+                <h6 style="margin-right: 10px;">Upload Document: </h6>
+                <input type="file" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 400px !important" required>  
+            </div>
+
+            <!-- Already Uploaded -->
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">ALREADY UPLOADED PHOTO: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 300px !important ; height:30px !important" required>                  
+            </div>
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">ALREADY UPLOADED SIGNATURE: </h6>
+                <input type="text" name="text" placeholder="" class='col s12 l5' style="margin-right: 20px !important;  width: 300px !important ; height:30px !important" required>                  
+            </div>
+
+
+            <div class = 'form-style row s12 l6 black-text' style="display: flex; align-items: baseline;"> 
+                <h6 style="margin-right: 10px;">ALREADY UPLOADED DOCUMENTS: </h6>
+                <textarea  class = 'white' id="w3review" name="w3review" rows="50" cols="50" style="height: 150px !important; width: 500px !important;">
+
+                    </textarea>        
+            </div>
+
+            <button class = 'waves-effect waves-dark' onclick="M.toast({html: 'Submitted',completeCallback: function(){alert('Thanks for your request')}})">Submit</button>
+
+
+
+            
+
+ 
+  
+            
+
+
+          </form>
+      </div>
+  </div>
+
+
+
+
+
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+    $('.carousel').carousel();
+    $('.datepicker').datepicker();
+    $('select').formSelect();
+});
+</script>
+
+
+
+</body>
+</html>
