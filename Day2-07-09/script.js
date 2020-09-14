@@ -9,7 +9,7 @@ var weather_string =
 // xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://maximum.blog/@shalvah/posts");
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', weather_string);
+request.open('GET', open_api);
 request.send();
 
 request.onload = function () {
