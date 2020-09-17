@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <header>
+    <div class="parent">
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Newspaper Redesign</a>
@@ -37,7 +37,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item ">
               <!-- Paper Design-1 -->
               <a class="nav-link" href="index.html"
                 >Design-1<span class="sr-only">(current)</span></a
@@ -55,12 +55,10 @@
           </ul>
         </div>
       </nav>
-      <!-- End Navbar -->
-    </header>
+      <!-- Navbar End -->
 
-    <main>
-      <div class="container-fluid">
-        <!-- MAIN HEADER -->
+      <!-- Paper Heading and Cards Start -->
+      <div class="container-fluid mt-4">
         <div class="row">
           <!-- First Column -->
           <div
@@ -126,9 +124,16 @@
             <!-- ******COMPONENT ******* -->
           </div>
         </div>
-        <!-- LINE -->
-        <hr style="border: 2px solid black" />
-        <!-- INFO -->
+      </div>
+      <hr style="border: 2px solid black" />
+      <!-- PAPER HEADING AND CARDS END -->
+      <!-- ********************************************************************************** -->
+
+      <!-- DATE AND INFO -->
+      <div
+        class="container-fluid"
+        style="font-family: 'Oswald', sans-serif"
+      >
         <div class="row">
           <div class="col">Wednesday, September 16, 2020</div>
           <div class="col" style="text-align: center">
@@ -136,62 +141,62 @@
           </div>
           <div class="col" style="text-align: right">Page 1 of Page 22</div>
         </div>
-        <!-- LINE -->
-        <hr style="border: 2px solid black" />
+      </div>
+      <hr style="border: 2px solid black" />
 
-        <!-- PAGE SEPERATION -->
+      <!-- ************************************************************************************* -->
+      <!-- MAIN CONTENT  -->
+      <div class="container-fluid">
         <div class="row">
-          <!-- LARGE SEPERATION -->
-          <div class="col-sm-12 col-md-8 col-lg-8">
-            <!-- New HeadLine Row -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <span
-                  class="paper-heading"
-                  style="font-family: 'Oswald', sans-serif"
-                  >Electric Cars: The Future 0f Transportation</span
-                >
-              </div>
-            </div>
-            <!-- Image Row -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <img
-                  src="https://images.unsplash.com/photo-1554744512-783e8dc69b10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
-                  alt=""
-                  class="image-fluid"
-                />
-              </div>
-            </div>
-            <!--  Description -->
-            <div class="row text-justify">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <h5>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Recusandae quos maiores explicabo reiciendis consequatur
-                  tempore? Voluptatum molestiae deserunt velit perferendis
-                  harum, assumenda officia voluptate excepturi numquam. Odio ea
-                  nemo incidunt iste. Consequatur aperiam officia odio iusto
-                  eligendi beatae magnam? Ex veritatis facilis explicabo ipsa
-                  vel enim maiores nobis quam odit?
-                </h5>
+          <!-- ********CONTAINER -1 ******** -->
+          <div class="col-md-9">
+            <!-- Container-1 -->
+            <span
+              class="paper-heading"
+              style="font-family: 'Oswald', sans-serif"
+              >Electric Cars: The Future 0f Transportation</span
+            >
+            <img
+              src="https://images.unsplash.com/photo-1554744512-783e8dc69b10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+              alt=""
+              class="image-fluid w-100 h-25"
+              style="max-width: 100%; height: auto"
+            />
 
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-                  explicabo sunt? Suscipit obcaecati quisquam natus, ut
-                  voluptatibus non esse illo exercitationem repellat ipsa sed
-                  blanditiis laudantium soluta debitis laboriosam sit hic
-                  reiciendis. Sequi ut delectus exercitationem impedit libero,
-                  similique autem dicta in eum! Vero veritatis nesciunt dolor
-                  aliquid sed minima.
-                </h5>
-              </div>
-            </div>
+            <h5 class="mt-5" style="text-align: justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum rem vero architecto praesentium illo adipisci
+              recusandae quae, accusamus sequi, doloribus modi delectus harum
+              porro sed repudiandae possimus velit inventore explicabo ducimus
+              voluptas quos qui cum? Eos minima ab, nulla, ipsa eaque quia nam
+              assumenda vero porro similique ullam modi consequatur blanditiis
+              error quibusdam nobis tempore vitae, nesciunt voluptatibus esse
+              officia hic! Obcaecati ad molestias facilis, totam modi cumque,
+              iste unde eius culpa repellendus inventore placeat id, nobis atque
+              facere eaque nihil sit minima perspiciatis maiores velit debitis.
+              Nobis delectus nam possimus, corrupti facere maxime tenetur animi
+              voluptatibus est exercitationem voluptas.
+            </h5>
+            <br />
 
-            <!-- Paper Grid -->
-            <div class="row text-justify">
-              <!-- GRID COL - 1 -->
-              <div class="col-sm-6 col-md-6 col-lg-6">
+            <h5 class="mt-5" style="text-align: justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum rem vero architecto praesentium illo adipisci
+              recusandae quae, accusamus sequi, doloribus modi delectus harum
+              porro sed repudiandae possimus velit inventore explicabo ducimus
+              voluptas quos qui cum? Eos minima ab, nulla, ipsa eaque quia nam
+              assumenda vero porro similique ullam modi consequatur blanditiis
+              error quibusdam nobis tempore vitae, nesciunt voluptatibus esse
+              officia hic! Obcaecati ad molestias facilis, totam modi cumque,
+              iste unde eius culpa repellendus inventore placeat id, nobis atque
+              facere eaque nihil sit minima perspiciatis maiores velit debitis.
+              Nobis delectus nam possimus, corrupti facere maxime tenetur animi
+              voluptatibus est exercitationem voluptas.
+            </h5>
+
+            <!-- ********* CONTAINER-1-GRID-PART ************* -->
+            <div class="row">
+              <div class="col col-sm-12 col-md-12 col-lg-6">
                 <!-- *****COMPONENT -1  ****** -->
                 <span class="paper-small-heading"
                   >Robotic Process Automation</span
@@ -214,83 +219,8 @@
                   </div>
                 </div>
                 <!-- ******COMPONENT ******* -->
-                <!-- *****COMPONENT - 2  ****** -->
-                <span class="paper-small-heading"
-                  >Robotic Process Automation</span
-                >
-                <div class="row mt-3">
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                    <img
-                      src="https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
-                      alt=""
-                      class="image-fluid h-75 w-100"
-                      style="object-fit: contain"
-                    />
-                  </div>
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                    <p style="text-align: left">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Voluptatum provident repellendus a eum iste. Similique
-                      vitae esse corporis accusamus incidunt!
-                    </p>
-                  </div>
-                </div>
-                <!-- ******COMPONENT - 2 ******* -->
-              </div>
-              <!-- GRID-COL-2 -->
-              <div class="col-sm-6 col-md-6 col-lg-6">
-                <!-- *****COMPONENT -1  ****** -->
-                <span class="paper-small-heading"
-                  >Robotic Process Automation</span
-                >
-                <div class="row mt-3">
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                    <img
-                      src="https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
-                      alt=""
-                      class="image-fluid h-75 w-100"
-                      style="object-fit: contain"
-                    />
-                  </div>
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                    <p style="text-align: left">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Voluptatum provident repellendus a eum iste. Similique
-                      vitae esse corporis accusamus incidunt!
-                    </p>
-                  </div>
-                </div>
-                <!-- ******COMPONENT ******* -->
-                <!-- *****COMPONENT - 2  ****** -->
-                <span class="paper-small-heading"
-                  >Robotic Process Automation</span
-                >
-                <div class="row mt-3">
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                    <img
-                      src="https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
-                      alt=""
-                      class="image-fluid h-75 w-100"
-                      style="object-fit: contain"
-                    />
-                  </div>
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                    <p style="text-align: left">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Voluptatum provident repellendus a eum iste. Similique
-                      vitae esse corporis accusamus incidunt!
-                    </p>
-                  </div>
-                </div>
-                <!-- ******COMPONENT - 2 ******* -->
-              </div>
-            </div>
-            <hr style="border: 2px solid black" />
 
-            <!-- FINAL FOOTER GRID -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 text-justify">
-                <!-- ***** FINAL COMPONENT ****** -->
+                <!-- *****COMPONENT -2  ****** -->
                 <span class="paper-small-heading"
                   >Robotic Process Automation</span
                 >
@@ -311,129 +241,188 @@
                     </p>
                   </div>
                 </div>
-                <!-- ****** FINAL COMPONENT******* -->
+                <!-- ******COMPONENT -2  ******* -->
+              </div>
+
+              <div class="col col-sm-12 col-md-12 col-lg-6">
+                <!-- *****COMPONENT -3  ****** -->
+                <span class="paper-small-heading"
+                  >Robotic Process Automation</span
+                >
+                <div class="row mt-3">
+                  <div class="col-sm-6 col-lg-6 col-md-6">
+                    <img
+                      src="https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+                      alt=""
+                      class="image-fluid h-75 w-100"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-md-6">
+                    <p style="text-align: left">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptatum provident repellendus a eum iste. Similique
+                      vitae esse corporis accusamus incidunt!
+                    </p>
+                  </div>
+                </div>
+                <!-- ******COMPONENT -3  ******* -->
+
+                <!-- *****COMPONENT - 4  ****** -->
+                <span class="paper-small-heading"
+                  >Robotic Process Automation</span
+                >
+                <div class="row mt-3">
+                  <div class="col-sm-6 col-lg-6 col-md-6">
+                    <img
+                      src="https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+                      alt=""
+                      class="image-fluid h-75 w-100"
+                      style="object-fit: contain"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-lg-6 col-md-6">
+                    <p style="text-align: left">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptatum provident repellendus a eum iste. Similique
+                      vitae esse corporis accusamus incidunt!
+                    </p>
+                  </div>
+                </div>
+                <!-- ******COMPONENT - 4 ******* -->
               </div>
             </div>
-            
+
+            <hr style="width:100%; border: 2px solid black">
+                            <!-- ***** FINAL COMPONENT ****** -->
+                            <span class="paper-small-heading"
+                            >Robotic Process Automation</span
+                          >
+                          <div class="row mt-3">
+                            <div class="col-sm-6 col-lg-6 col-md-6">
+                              <img
+                                src="https://images.unsplash.com/photo-1548778052-311f4bc2b502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
+                                alt=""
+                                class="image-fluid h-75 w-100"
+                                style="object-fit: contain"
+                              />
+                            </div>
+                            <div class="col-sm-6 col-lg-6 col-md-6">
+                              <p style="text-align: left">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Voluptatum provident repellendus a eum iste. Similique
+                                vitae esse corporis accusamus incidunt!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- ****** FINAL COMPONENT******* -->
+
+
+            <!-- ****************GRID COMPLETE************ -->
           </div>
-          <!-- MAIN SMALL SEPERATION -2  -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <!-- Politics Heading -->
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <span
-                  class="final-heading"
-                  style="font-family: 'Oswald', sans-serif"
-                  >Politics</span
-                >
-              </div>
+          
+
+
+
+
+
+
+
+          <!-- *********CONTAINER - 2 ******** -->
+          <div class="col-6 col-md-3">
+            <span
+              class="final-heading"
+              style="font-family: 'Oswald', sans-serif"
+              >Politics</span
+            >
+
+            <img
+              src="https://images.unsplash.com/photo-1521987285768-78e0e06b4ec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+              alt=""
+              class="w-100 h-25 rounded float-right"
+            />
+            <br />
+
+            <h1 style="font-family: 'Oswald', sans-serif">
+              Protection of Kids
+            </h1>
+
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+              officiis a, voluptatem, corrupti laborum deleniti modi consectetur
+
+            </h5>
+
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur odit sapiente reiciendis error tenetur non architecto
+              delectus hic, laborum necessitatibus.
+            </h5>
+
+            <h5>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              fugit ad delectus architecto. Error excepturi autem ea eligendi
+
+            </h5>
+
+            <div class="container border mt-5" style="text-align: justify">
+              <h2 style="font-family: 'Oswald', sans-serif">
+                Protection of Kids
+              </h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                dolor sunt quos est quam dolorem porro alias, dolore minus
+
+              </p>
+
+              <!-- 2 -->
+
+              <h2 style="font-family: 'Oswald', sans-serif">Act Violation</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                dolor sunt quos est quam dolorem porro alias, dolore minus
+                doloribus, atque blanditiis distinctio, quis exercitationem
+              </p>
+
+              <!-- 3 -->
+
+              <h2 style="font-family: 'Oswald', sans-serif">Stanford Arts</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                dolor sunt quos est quam dolorem porro alias, dolore minus
+                doloribus, atque blanditiis distinctio, quis exercitationem
+              </p>
+
+              <!-- 4 -->
+
+              <h2 style="font-family: 'Oswald', sans-serif">
+                Support for armed forces beyond debate
+              </h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+                dolor sunt quos est quam dolorem porro alias, dolore minus
+                doloribus, atque blanditiis distinctio, quis exercitationem
+                dolores quo itaque ducimus voluptatum placeat eos laborum.
+                Tempore dolor repellendus numquam, dolores fuga optio quod
+              </p>
             </div>
-
-            <!-- Politics Image -->
-            <div class="row text-justify">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <img
-                  src="https://images.unsplash.com/photo-1521987285768-78e0e06b4ec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-                  alt=""
-                  class="image-fluid w-100 h-100"
-                />
-              </div>
-            </div>
-
-            <!-- Politics Heading -->
-            <div class="row">
-              <div class="col-sm-12">
-                <h1 style="font-family: 'Oswald', sans-serif">
-                  Protection of Kids
-                </h1>
-              </div>
-            </div>
-
-            <!-- Politics Matter -->
-            <div class="row text-justify">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  officiis a, voluptatem, corrupti laborum deleniti modi
-                  consectetur
-                </h5>
-
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur odit sapiente reiciendis error tenetur non
-                  architecto delectus hic, laborum necessitatibus.
-                </h5>
-
-                <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem fugit ad delectus architecto. Error excepturi autem ea
-                  eligendi
-                </h5>
-              </div>
-            </div>
-
-            <!-- Politics Card -->
-            <div class="row text-justify">
-              <div class="col-sm-12 col-md-12 col-lg-12 border">
-                <h2 style="font-family: 'Oswald', sans-serif">
-                  Protection of Kids
-                </h2>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
-                  dolor sunt quos est quam dolorem porro alias, dolore minus
-                </p>
-
-                <!-- 2 -->
-
-                <h2 style="font-family: 'Oswald', sans-serif">Act Violation</h2>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
-                  dolor sunt quos est quam dolorem porro alias, dolore minus
-                  doloribus, atque blanditiis distinctio, quis exercitationem
-                </p>
-
-                <!-- 3 -->
-
-                <h2 style="font-family: 'Oswald', sans-serif">Stanford Arts</h2>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
-                  dolor sunt quos est quam dolorem porro alias, dolore minus
-                  doloribus, atque blanditiis distinctio, quis exercitationem
-                </p>
-
-                <!-- 4 -->
-
-                <h2 style="font-family: 'Oswald', sans-serif">
-                  Support for armed forces beyond debate
-                </h2>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
-                  dolor sunt quos est quam dolorem porro alias, dolore minus
-                  doloribus, atque blanditiis distinctio, quis exercitationem
-                  dolores quo itaque ducimus voluptatum placeat eos laborum.
-                  Tempore dolor repellendus numquam, dolores fuga optio quod
-                </p>
-              </div>
-            </div>
-
-
           </div>
 
-        </div>
 
-        <!-- COPYRIGHT  -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 bg-dark">
-            <p>&copy; VishnuDarshan </p>
           </div>
         </div>
       </div>
-    </main>
 
+    <!-- </div> -->
+    <div class="container-fluid">
+        <div class="col" style="height: 50px;">
+            @risingsun.com publishers
+        </div>
+    </div>
     <!-- Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -450,5 +439,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+
+    <script></script>
   </body>
 </html>
