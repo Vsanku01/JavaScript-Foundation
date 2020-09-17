@@ -1,0 +1,206 @@
+
+.resume {
+  background-color: #565656;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+#profile-image {
+  border-radius: 50%;
+  height: 200px;
+  border: 5px dotted #fabe28;
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+
+.profile-div {
+  margin: auto auto;
+  margin-top: 0px;
+  height: 50px;
+  width: 500px;
+  background-color: #fabe28;
+  border-radius: 10px;
+}
+
+.profile-name-div {
+  background: #eeeeee;
+}
+
+.profile-banner {
+  background-color: #565656;
+  height: 50px;
+}
+
+.profile-text{
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Resume Split */
+.resume-split {
+  display: flex;
+  flex-flow: row wrap;
+  order: 2;
+}
+
+.resume-left {
+  background-color: white;
+  height: 1000px;
+  width: 500px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-right {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    align-items: baseline;
+}
+.profile > h2{
+   margin-left: 10px;
+}
+
+.profile-icon {
+    width:50px;
+    height:50px;
+    margin: 5px 5px;
+    background-color:#fabe28;
+    border-radius:100%;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+    border: 3px dotted black;
+    
+}
+
+.fa-user{
+    line-height: inherit;
+}
+
+.technical-sliders{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.parent-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+progress::-moz-progress-bar { background:#fabe28; }
+
+progress::-webkit-progress-value { background: #fabe28; }
+
+.slider-progress > progress {
+    height: 10px;
+    border-radius: 20px !important;
+}
+
+
+
+/* myskills */
+.myskills{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.myskills h2{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 40px;
+}
+.myskills h3{
+    color: black;
+}
+.skillitem{
+    display: flex;
+    justify-content: baseline;
+}
+.programming{
+    margin-left: 5%;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+.software{
+    margin-left: 5%;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+.programming h4{
+    color:white;
+    text-align: center;
+    background-color: #4c6cb0;
+}
+.bar{
+    background: white;
+    display: block;
+    height: 12px;
+    border: solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar span{
+    height: 10px;
+    float: left;
+    background: #fabe28;
+}
+.html{width:80%; animation: html 3s;}
+.css{width:80%; animation: css 3s;}
+.js{width:90%; animation: js 3s;}
+.java{width:80%; animation: html 3s;}
+.bootstrap{width:80%; animation: html 3s;}
+.nodejs{width:60%; animation: html 3s;}
+.sql{width:90%; animation: sql 3s;}
+@keyframes html{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes css{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes js{
+    0%{width: 0%}
+    100%{widows: 90%;}
+}
+@keyframes java{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes bootstrap{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes nodejs{
+    0%{width: 0%}
+    100%{widows: 60%;}
+}
+@keyframes sql{
+    0%{width: 0%}
+    100%{widows: 90%;}
+}
+
+.programming-projects{
+    text-align: left;
+    padding-left: 15px;
+}
+
