@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <!-- Name -->
+        <div class="title"><h1>Registration Form</h3></div>
+        <!-- Options -->
+        <div class="nav-options">
+          <a class="active" href="index.html">Registration</a>
+          <a href="productPage.html">Product-Demo</a>
+          <a href="landingpage.html">Landing-Page</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <form name="registration" onSubmit="return formValidation();">
+        <!-- Full Name -->
+        <div class="row">
+          <div class="col-25">
+            <label for="username">Full Name</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">account_circle</i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Full Name"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- address line 1  -->
+        <div class="row">
+          <div class="col-25">
+            <label for="address1">Address Line 1</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">perm_contact_calendar</i>
+            <input
+              type="text"
+              id="address1"
+              name="address1"
+              placeholder="Address Line 1"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- address line 2 -->
+        <div class="row">
+          <div class="col-25">
+            <label for="address2">Address Line 2</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">perm_contact_calendar</i>
+            <input
+              type="text"
+              id="address2"
+              name="address2"
+              placeholder="Address Line 1"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!--City  -->
+        <div class="row">
+          <div class="col-25">
+            <label for="city">City</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">location_city</i>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="City"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- State/ Province Region  -->
+        <div class="row">
+          <div class="col-25">
+            <label for="state">State</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">home_work</i>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="state"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Postal Code / Zip -->
+        <div class="row">
+          <div class="col-25">
+            <label for="postal">Postal Code/ Zip</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">all_inbox</i>
+            <input
+              type="text"
+              id="postal"
+              name="postal"
+              placeholder="postal"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Country -->
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75" style="display: flex">
+            <i class="material-icons icon-border">all_inbox</i>
+            <select id="country" name="country">
+              <option selected="" value="Default">
+                (Please select a country)
+              </option>
+              <option value="india">India</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">email</i>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Phone Number  -->
+        <div class="row">
+          <div class="col-25">
+            <label for="phone">Phone Number</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">contact_phone</i>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="phone"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <input type="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Script -->
+    <script
+      src="https://kit.fontawesome.com/1e11d07715.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="validation.js"></script>
+  </body>
+</html>
