@@ -1,6 +1,11 @@
 * {
   margin: 0;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+}
 .topnav {
   background-color: black;
   height: 50px;
