@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <!-- Name -->
+        <div class="title"><h1>Registration Form</h1></div>
+        <!-- Options -->
+        <div class="nav-options">
+          <a class="active" href="index.html">Registration</a>
+          <a href="productPage.html">Product-Demo</a>
+          <a href="landingpage.html">Landing-Page</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <form name="registration" onSubmit="return formValidation();">
+        <!-- First Name -->
+        <div class="row">
+          <div class="col-25">
+            <label for="username">First Name</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">account_circle</i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Full Name"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Last Name -->
+        <div class="row">
+          <div class="col-25">
+            <label for="username">Last Name</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">account_circle</i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Full Name"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- address-->
+        <div class="row">
+          <div class="col-25">
+            <label for="address1">Address</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">perm_contact_calendar</i>
+            <input
+              type="text"
+              id="address1"
+              name="address1"
+              placeholder="Address Line 1"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Postal Code / Zip -->
+        <div class="row">
+          <div class="col-25">
+            <label for="postal">Postal Code/ Zip</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">all_inbox</i>
+            <input
+              type="text"
+              id="postal"
+              name="postal"
+              placeholder="postal"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Gender -->
+        <div class="row">
+          <div class="col-25">
+            <label for="postal">Gender</label>
+          </div>
+          <div
+            class="col-75 input-icons"
+            style="display: flex; align-items: center"
+          >
+            <!-- icon -->
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+          </div>
+        </div>
+        <!-- Choice of Food -->
+        <div class="row">
+          <div class="col-25">
+            <label for="postal">Choice of Food</label>
+          </div>
+          <div
+            class="col-75 input-icons"
+            style="display: flex; align-items: center"
+          >
+            <input type="radio" id="Cheese" name="Cheese" value="Cheese" />
+            <label for="male">Cheese</label><br />
+            <input
+              type="radio"
+              id="Tomatoes"
+              name="Tomatoes"
+              value="Tomatoes"
+            />
+            <label for="female">Tomatoes</label><br />
+            <input
+              type="radio"
+              id="Mushrooms"
+              name="Mushrooms"
+              value="Mushrooms"
+            />
+            <label for="female">Mushrooms</label><br />
+            <input
+              type="radio"
+              id="Pepperoni"
+              name="Pepperoni"
+              value="Pepperoni"
+            />
+            <label for="female">Pepperoni</label><br />
+            <input
+              type="radio"
+              id="Mozzarella"
+              name="Mozzarella"
+              value="Mozzarella"
+            />
+            <label for="female">Mozzarella</label><br />
+          </div>
+        </div>
+
+        <!-- State/ Province Region  -->
+        <div class="row">
+          <div class="col-25">
+            <label for="state">State</label>
+          </div>
+          <div class="col-75 input-icons">
+            <!-- icon -->
+            <i class="material-icons icon-border">home_work</i>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="state"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <!-- Country -->
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75" id="country">
+            <i class="material-icons icon-border">all_inbox</i>
+            <select id="country" name="country">
+              <option selected="" value="Default">
+                (Please select a country)
+              </option>
+              <option value="india">India</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="row">
+          <input type="submit" name="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+      <hr />
+      <br />
+      <!-- Table -->
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Choice of Food</th>
+            <th scope="col">State</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Script -->
+    <script
+      src="https://kit.fontawesome.com/1e11d07715.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script>
+      const food = document.getElementById('Cheese').value;
+      const submit = document.getElementById('submit');
+      submit.addEventListener('click', (e) => {
+        e.preventDefault();
+        let tr = document.createElement('tr');
+        let th = document.createElement('th');
+        th.setAttribute('scope', 'row');
+        th.innerText = 4;
+        let td = document.createElement('td');
+        td.innerText = food;
+        tr.append(th);
+        tr.append(td);
+        const tbody = document.querySelector('tbody');
+        tbody.append(tr);
+      });
+    </script>
+  </body>
+</html>
