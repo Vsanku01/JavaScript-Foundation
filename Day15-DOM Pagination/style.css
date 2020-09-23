@@ -1,0 +1,60 @@
+.cssPagination .pages > .page:target ~ .page:last-child,
+.cssPagination .pages > .page {
+  display: none;
+}
+.cssPagination .pages > :last-child,
+.cssPagination .pages > .page:target {
+  display: block;
+}
+
+* {
+  background-color: black;
+  color: white;
+}
+
+.pageNav > a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pageNav a.active {
+  background-color: lightpink;
+  color: white;
+  border-radius: 5px;
+}
+
+.pageNav a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.title > a {
+  color: black;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+.title > a{
+    color: white;
+}
+
+.pageNumber {
+    background-color: white;
+    border-radius: 3px ;
+    margin: 5px;
+}
+.page-title{
+    background: lightgoldenrodyellow;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+}
