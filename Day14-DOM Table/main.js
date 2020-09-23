@@ -214,7 +214,7 @@ cheeseInput.setAttribute('value', 'cheese');
 col75ChoiceOfFood.append(cheeseInput);
 
 const cheeseLabel = document.createElement('label');
-cheeseLabel.setAttribute('for', 'male');
+cheeseLabel.setAttribute('for', 'cheese');
 cheeseLabel.innerText = 'Cheese';
 
 col75ChoiceOfFood.append(cheeseLabel);
@@ -230,7 +230,7 @@ tomatoesInput.setAttribute('value', 'tomatoes');
 col75ChoiceOfFood.append(tomatoesInput);
 
 const tomatoesLabel = document.createElement('label');
-tomatoesLabel.setAttribute('for', 'male');
+tomatoesLabel.setAttribute('for', 'tomatoes');
 tomatoesLabel.innerText = 'Tomatoes';
 
 col75ChoiceOfFood.append(tomatoesLabel);
@@ -245,7 +245,7 @@ mushroomsInput.setAttribute('value', 'mushrooms');
 col75ChoiceOfFood.append(mushroomsInput);
 
 const mushroomsLabel = document.createElement('label');
-mushroomsLabel.setAttribute('for', 'male');
+mushroomsLabel.setAttribute('for', 'mushrooms');
 mushroomsLabel.innerText = 'Mushrooms';
 
 col75ChoiceOfFood.append(mushroomsLabel);
@@ -260,7 +260,7 @@ pepperoniInput.setAttribute('value', 'pepperoni');
 col75ChoiceOfFood.append(pepperoniInput);
 
 const pepperoniLabel = document.createElement('label');
-pepperoniLabel.setAttribute('for', 'male');
+pepperoniLabel.setAttribute('for', 'pepperoni');
 pepperoniLabel.innerText = 'Pepperoni';
 
 col75ChoiceOfFood.append(pepperoniLabel);
@@ -276,7 +276,7 @@ mozzarellaInput.setAttribute('value', 'mozzarella');
 col75ChoiceOfFood.append(mozzarellaInput);
 
 const mozzarellaLabel = document.createElement('label');
-mozzarellaLabel.setAttribute('for', 'male');
+mozzarellaLabel.setAttribute('for', 'mozarella');
 mozzarellaLabel.innerText = 'Mozzarella';
 
 col75ChoiceOfFood.append(mozzarellaLabel);
