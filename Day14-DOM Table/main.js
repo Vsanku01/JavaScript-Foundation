@@ -276,7 +276,7 @@ mozzarellaInput.setAttribute('value', 'mozzarella');
 col75ChoiceOfFood.append(mozzarellaInput);
 
 const mozzarellaLabel = document.createElement('label');
-mozzarellaLabel.setAttribute('for', 'mozarella');
+mozzarellaLabel.setAttribute('for', 'mozzarella');
 mozzarellaLabel.innerText = 'Mozzarella';
 
 col75ChoiceOfFood.append(mozzarellaLabel);
