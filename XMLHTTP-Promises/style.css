@@ -1,0 +1,12 @@
+.col-sm{
+    margin-bottom: 40px;
+}
+
+body{
+    background: black;
+}
+h1{
+    color: white;
+    margin-bottom: 30px;
+    background-color: lightslategrey;
+}
