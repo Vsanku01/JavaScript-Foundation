@@ -43,7 +43,7 @@ countryRequest().then((data) => {
           }</h6></li>
           <li class="list-group-item"><h6>Lat&Long: ${country.latlng}</h6></li>
           <li class="list-group-item"><h6>Region: ${country.region}</h6></li>
-          <li class="list-group-item"><h6>Currency: ${JSON.stringify(
+          <li class="list-group-item"><h6>Country Code: ${JSON.stringify(
             country.currencies[0].code
           )}</h6></li>
           <li class="list-group-item"><h6>Name: ${JSON.stringify(
@@ -65,8 +65,8 @@ countryRequest().then((data) => {
       let ul = document.getElementById(`index-${index}`);
       li.classList.add('list-group-item');
       li.innerHTML = `
-        <h6>Weather: ${weather}°C</h6>
-        `;
+          <h6>Weather: ${weather}°C</h6>
+          `;
 
       ul.append(li);
     });
