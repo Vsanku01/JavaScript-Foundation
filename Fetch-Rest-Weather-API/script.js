@@ -9,12 +9,13 @@ const countryRequest = async () => {
   }
   return countryData;
 };
+// e97adeb719ce0fdd36331ed8e5ea0be1
 
 const weatherApi = (countryName) => {
   return new Promise((resolve, reject) => {
     countryName.forEach(async (country, index) => {
       var data = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${country.latlng[0]}&lon=${country.latlng[1]}&units=imperial&appid=e97adeb719ce0fdd36331ed8e5ea0be1
+        `https://api.openweathermap.org/data/2.5/weather?lat=${country.latlng[0]}&lon=${country.latlng[1]}&units=imperial&appid=171f2eeabf1e2be2486628688beff943
         `
       );
       var jsonData = await data.json();
