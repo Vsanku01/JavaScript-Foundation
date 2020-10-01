@@ -1,3 +1,11 @@
+const container = document.createElement('div');
+container.classList.add('container');
+document.body.append(container);
+
+const row = document.createElement('div');
+row.classList.add('row');
+container.append(row);
+
 let countries = [];
 let weatherInfo = [];
 let count = 0;
@@ -65,8 +73,8 @@ countryRequest().then((data) => {
       let ul = document.getElementById(`index-${index}`);
       li.classList.add('list-group-item');
       li.innerHTML = `
-          <h6>Weather: ${weather}°C</h6>
-          `;
+            <h6>Weather: ${weather}°C</h6>
+            `;
 
       ul.append(li);
     });
