@@ -1,0 +1,38 @@
+.container {
+  margin-top: 2rem;
+}
+
+h1 {
+  background: lightslategrey;
+  display: block;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#loader {
+  border: 1rem solid #9ac2e6;
+  border-radius: 50%;
+  border-top: 1rem solid black;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn {
+  margin-bottom: 3rem;
+}
