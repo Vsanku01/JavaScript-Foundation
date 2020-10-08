@@ -63,11 +63,8 @@ var TV = /** @class */ (function () {
         console.log(tv);
     };
     TV.prototype.increaseVolume = function (event) {
-        console.log("INCREASE VOL");
-        if (VOLUME >= 0 && VOLUME <= 100) {
-            tv.volume += 10;
-            VOLUME = tv.volume;
-            localStorage.volume = VOLUME;
+        if (localStorage.volume >= 0 && localStorage.volume <= 100) {
+            localStorage.volume = Number(localStorage.volume) + 10;
             event.target.setVolume(VOLUME);
         }
         else {
@@ -75,10 +72,8 @@ var TV = /** @class */ (function () {
         }
     };
     TV.prototype.decreaseVolume = function (event) {
-        console.log("DECREASE VOL");
-        if (localStorage.volume >= 10 && localStorage.volume <= 110) {
-            console.log("Decrease");
-            localStorage.volume -= 10;
+        if (localStorage.volume >= 10 && localStorage.volume <= 100) {
+            localStorage.volume = Number(localStorage.volume) - 10;
             event.target.setVolume(localStorage.volume);
         }
         else {
@@ -223,7 +218,7 @@ var Plasma = /** @class */ (function (_super) {
         }
     };
     Plasma.prototype.status = function () {
-        var stat = tv.brand + " at channel " + tv.channel + ", volume " + tv.volume;
+        var stat = plasma.brand + " at channel " + localStorage.channelCount + ", volume " + localStorage.volume;
         document.querySelector(".status").innerHTML = "<p>" + stat + "</p>";
     };
     return Plasma;
