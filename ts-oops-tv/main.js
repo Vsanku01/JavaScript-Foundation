@@ -24,14 +24,12 @@ console.log("check", localStorage.channelCount);
 if (!localStorage.channelCount || localStorage.channelCount < 0) {
     localStorage.channelCount = 0;
 }
-if (!localStorage.volume || localStorage.volume < 0) {
-    localStorage.volume = 50;
-}
+localStorage.volume = 50;
 if (plasmaCheck == null) {
-    document.querySelector(".status").innerHTML = "<p>LED at channel " + localStorage.channelCount + ", volume " + localStorage.volume + "</p>";
+    document.querySelector(".status").innerHTML = "<p>Panasonic at channel " + localStorage.channelCount + ", volume " + localStorage.volume + "</p>";
 }
 else {
-    document.querySelector(".status").innerHTML = "<p>Plasma at channel " + localStorage.channelCount + ", volume " + localStorage.volume + "</p>";
+    document.querySelector(".status").innerHTML = "<p>LG at channel " + localStorage.channelCount + ", volume " + localStorage.volume + "</p>";
 }
 function clickCounter() {
     if (typeof Storage !== "undefined") {
@@ -44,7 +42,7 @@ function clickCounter() {
     }
 }
 // CONSTANTS
-var VOLUME = 50;
+var VOLUME = localStorage.volume;
 var CHANNEL = localStorage.channelCount;
 // Lazy Object Literal Initialization
 var tv = {};
@@ -65,6 +63,7 @@ var TV = /** @class */ (function () {
         console.log(tv);
     };
     TV.prototype.increaseVolume = function (event) {
+        console.log("INCREASE VOL");
         if (VOLUME >= 0 && VOLUME <= 100) {
             tv.volume += 10;
             VOLUME = tv.volume;
@@ -76,12 +75,11 @@ var TV = /** @class */ (function () {
         }
     };
     TV.prototype.decreaseVolume = function (event) {
-        console.log(tv.volume);
-        if (VOLUME > 0 && VOLUME <= 110) {
-            tv.volume -= 10;
-            VOLUME -= 10;
-            localStorage.volume = VOLUME;
-            event.target.setVolume(VOLUME);
+        console.log("DECREASE VOL");
+        if (localStorage.volume >= 10 && localStorage.volume <= 110) {
+            console.log("Decrease");
+            localStorage.volume -= 10;
+            event.target.setVolume(localStorage.volume);
         }
         else {
             alert("Mutted 📳");
@@ -161,7 +159,7 @@ var LED = /** @class */ (function (_super) {
         console.log(led);
     };
     LED.prototype.status = function () {
-        var stat = tv.brand + " at channel " + tv.channel + ", volume " + tv.volume;
+        var stat = tv.brand + " at channel " + localStorage.channelCount + ", volume " + localStorage.volume;
         document.querySelector(".status").innerHTML = "<p>" + stat + "</p>";
     };
     return LED;

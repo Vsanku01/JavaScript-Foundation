@@ -13,18 +13,16 @@ if (!localStorage.channelCount || localStorage.channelCount < 0) {
   localStorage.channelCount = 0;
 }
 
-if (!localStorage.volume || localStorage.volume < 0) {
-  localStorage.volume = 50;
-}
+localStorage.volume = 50;
 
 if (plasmaCheck == null) {
   document.querySelector(
     ".status"
-  ).innerHTML = `<p>LED at channel ${localStorage.channelCount}, volume ${localStorage.volume}</p>`;
+  ).innerHTML = `<p>Panasonic at channel ${localStorage.channelCount}, volume ${localStorage.volume}</p>`;
 } else {
   document.querySelector(
     ".status"
-  ).innerHTML = `<p>Plasma at channel ${localStorage.channelCount}, volume ${localStorage.volume}</p>`;
+  ).innerHTML = `<p>LG at channel ${localStorage.channelCount}, volume ${localStorage.volume}</p>`;
 }
 
 function clickCounter() {
@@ -38,7 +36,7 @@ function clickCounter() {
 }
 
 // CONSTANTS
-let VOLUME = 50;
+let VOLUME = localStorage.volume;
 let CHANNEL = localStorage.channelCount;
 
 interface tv_info {
@@ -85,6 +83,7 @@ class TV {
   }
 
   increaseVolume(event) {
+    console.log("INCREASE VOL");
     if (VOLUME >= 0 && VOLUME <= 100) {
       tv.volume += 10;
       VOLUME = tv.volume;
@@ -96,12 +95,11 @@ class TV {
   }
 
   decreaseVolume(event) {
-    console.log(tv.volume);
-    if (VOLUME > 0 && VOLUME <= 110) {
-      tv.volume -= 10;
-      VOLUME -= 10;
-      localStorage.volume = VOLUME;
-      event.target.setVolume(VOLUME);
+    console.log("DECREASE VOL");
+    if (localStorage.volume >= 10 && localStorage.volume <= 110) {
+      console.log("Decrease");
+      localStorage.volume -= 10;
+      event.target.setVolume(localStorage.volume);
     } else {
       alert("Mutted 📳");
     }
@@ -198,7 +196,7 @@ class LED extends TV {
   }
 
   status() {
-    let stat = `${tv.brand} at channel ${tv.channel}, volume ${tv.volume}`;
+    let stat = `${tv.brand} at channel ${localStorage.channelCount}, volume ${localStorage.volume}`;
     document.querySelector(".status").innerHTML = `<p>${stat}</p>`;
   }
 }
