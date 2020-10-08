@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>TV</title>
+  </head>
+  <body>
+    <div class="status">TV STATUS</div>
+    <div class="container">
+      <div class="container__tv" id="player">
+        <!-- Video Player -->
+      </div>
+      <!-- Remote -->
+      <img
+        src="./assets/remote.png"
+        alt="remote"
+        width="120"
+        height="500"
+        usemap="#image-map"
+      />
+      <map name="image-map">
+        <area
+          alt="power"
+          title="power"
+          href="#"
+          coords="0,1,42,33"
+          shape="rect"
+          id="power"
+        />
+        <area
+          alt="volUp"
+          title="volUp"
+          href="#"
+          coords="0,192,44,220"
+          shape="rect"
+          id="volUp"
+        />
+        <area
+          alt="volDown"
+          title="volDown"
+          href="#"
+          coords="1,229,45,258"
+          shape="rect"
+          id="volDown"
+        />
+        <area
+          alt="channelUp"
+          title="channelUp"
+          href="#"
+          coords="65,196,114,222"
+          shape="rect"
+          id="channelUp"
+        />
+        <area
+          alt="channelDown"
+          title="channelDown"
+          href="#"
+          coords="66,229,113,258"
+          shape="rect"
+          id="channelDown"
+        />
+        <area
+          alt="changeTv"
+          title="changeTv"
+          href="#"
+          coords="2,334,32,366"
+          shape="rect"
+          id="changeTv"
+        />
+        <area
+          alt="resetTv"
+          title="resetTv"
+          href="#"
+          coords="80,338,113,366"
+          shape="rect"
+          id="resetTv"
+        />
+      </map>
+    </div>
+    
+    <script defer src="https://api.dmcdn.net/all.js"></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>
