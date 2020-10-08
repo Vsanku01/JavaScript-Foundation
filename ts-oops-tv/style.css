@@ -36,6 +36,7 @@ body {
   height: 60vh;
   margin-right: 2rem;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  border: 20px solid lightslategrey;
 }
 
 .container-plasma {
@@ -54,6 +55,7 @@ body {
   height: 80vh;
   margin-right: 2rem;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(14, 83, 118, 0.5);
+  border: 20px solid lightslategrey;
 }
 
 map {

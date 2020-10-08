@@ -392,6 +392,14 @@ function onPlayerReady(event) {
     plasmaObj.displayPlasma(event);
     tvObj.status();
   });
+
+  resetTv.addEventListener("click", () => {
+    localStorage.channelCount = 0;
+    alert("You 📺 is being reset :) ");
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+  });
 }
 
 // 5. The API calls this function when the player's state changes.
