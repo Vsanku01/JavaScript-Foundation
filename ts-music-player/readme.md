@@ -1,4 +1,6 @@
-# Musicá Library welcomes You 🥁 - https://musica-libra.netlify.app/
+# Musicá Library welcomes You 🥁
+
+### Link: https://musica-libra.netlify.app/
 
 ## 1. You can create and select the Playlist you wanna add from the Navbar
 
