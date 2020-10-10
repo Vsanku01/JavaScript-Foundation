@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #b2dfdb, #009688);
+}
+
+main {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-top: 3rem;
+}
+
+#card {
+  border-radius: 5%;
+  margin-bottom: 2rem;
+  margin-right: 7rem;
+  margin-left: 2rem;
+}
+
+.card:hover {
+  /* transform: translateY(-0.5rem) scaleX(1.05); */
+  /* transition: transform 2ms; */
+  background-color: black;
+  color: white;
+}
+
+#album_name {
+  border-radius: 50%;
+  height: 20rem !important;
+}
+.dropdown-item {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.options-div {
+  background-color: lightblue;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px;
+}
