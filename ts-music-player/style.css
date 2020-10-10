@@ -43,3 +43,28 @@ main {
   border-radius: 5px;
   padding: 2px;
 }
+
+.hidden {
+  display: none !important;
+}
+
+#loader {
+  border: 1rem solid #009688;
+  border-radius: 50%;
+  border-top: 1rem solid #56a5eb;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  margin-left: 50%;
+  margin-top: 20%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

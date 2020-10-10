@@ -4,12 +4,16 @@ const search = document.getElementById("Search")! as HTMLInputElement;
 const submit = document.getElementById("submit")! as HTMLButtonElement;
 const home = document.getElementById("home")! as HTMLAnchorElement;
 const createPlaylist = document.getElementById("createPlaylist");
+const viewPlaylist = document.getElementById("viewPlaylist")!;
+const renderPlayList = document.getElementById("renderPlayList")!;
+const loader = document.getElementById("loader");
 
 // VARIABLES
 let albumName: string = "";
 let url = "https://theaudiodb.com/api/v1/json/1/album.php?i=112024";
 let count = 0;
 let checked = -1;
+let checkFlag = false;
 
 // LocalStorage
 if (!localStorage.url) {
@@ -17,6 +21,8 @@ if (!localStorage.url) {
 } else {
   console.log("False");
 }
+
+
 
 interface musicInfo {
   artistName?: string;
@@ -97,17 +103,15 @@ class MusicPlayer {
       `;
     });
     main.innerHTML = html;
+
+    // Disable Loader
+    loader?.classList.add("hidden");
+    main.classList.remove("hidden");
   }
 
   createPlaylist() {
     console.log("Clicked Playlist");
     count += 1;
-    // let Playlist = document.createElement("a");
-    // Playlist.setAttribute("class", "dropdown-item");
-    // Playlist.setAttribute("href", "#");
-    // Playlist.innerText = "PlayList-1";
-    // let plName = Playlist.innerText;
-    // localStorage.plName = [];
     let div = document.createElement("div");
     let Playlist = document.createElement("input");
     Playlist.type = "radio";
@@ -119,9 +123,37 @@ class MusicPlayer {
     label.innerHTML = `playlist-${count}<br>`;
     div.append(Playlist, label);
     div.classList.add("options-div");
-
     document.querySelector(".dropdown-item")?.append(div);
-    // document.querySelector(".dropdown-item")?.append(Playlist);
+  }
+
+  viewPlaylist() {
+    let div = document.createElement("div");
+    let Playlist = document.createElement("input");
+    Playlist.type = "radio";
+    Playlist.name = "playlist";
+    Playlist.value = `playlist-${count}`;
+    Playlist.id = `viewPlaylist-${count}`;
+    let label = document.createElement("label");
+    label.setAttribute("for", `playlist-${count}`);
+    label.innerHTML = `playlist-${count}<br>`;
+    div.append(Playlist, label);
+    div.classList.add("options-div");
+
+    document.querySelector("#viewPlaylist")?.append(div);
+  }
+
+  renderPlaylist() {
+    console.log("Rendering Playlist");
+    for (let j = 1; j <= count; j++) {
+      if (document.getElementById(`viewPlaylist-${j}`)!.checked === true) {
+        checkFlag = true;
+        console.log(JSON.parse(localStorage.getItem(`playlist-${j}`)));
+        localStorage.setItem("PlayListNumber", `${j}`);
+        window.location.assign("/view.html");
+      } else if (j === count && checkFlag === false) {
+        alert("You must create and select PlayList to View");
+      }
+    }
   }
 
   // addList(): () => void {
@@ -160,4 +192,9 @@ home.addEventListener("click", () => {
 
 createPlaylist?.addEventListener("click", () => {
   user.createPlaylist();
+  user.viewPlaylist();
+});
+
+renderPlayList.addEventListener("click", () => {
+  user.renderPlaylist();
 });
