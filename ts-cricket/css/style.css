@@ -29,4 +29,27 @@
   border-radius: 10%;
   padding: 5px;
 }
+
+.td-hid {
+  visibility: hidden;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.result {
+  padding: 5px;
+  border-radius: 10%;
+  color: white;
+  background-color: black;
+  margin: 5px;
+}
 /*# sourceMappingURL=style.css.map */
