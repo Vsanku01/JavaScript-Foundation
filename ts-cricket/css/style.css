@@ -52,4 +52,11 @@
   background-color: black;
   margin: 5px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.score-1 {
+  font-size: 20px;
+}
+
+.score-2 {
+  font-size: 20px;
+}

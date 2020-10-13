@@ -257,6 +257,8 @@ class Game {
 
     team1Final = this.calcSum(team1Scores);
     team2Final = this.calcSum(team2Scores);
+    document.getElementById("score-1")!.innerText = team1Final.toString();
+    document.getElementById("score-2")!.innerText = team2Final.toString();
     let plNo = 0;
     let id = -1;
     let manOfTheMatchScore = 0;
