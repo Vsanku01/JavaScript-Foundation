@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        Reset Credentials
+        <p style="font-size: 15px">Enter Email Address</p>
+      </div>
+      <form action="#">
+        <div class="field">
+          <input type="text" required id="email" />
+          <label>Email Address</label>
+        </div>
+
+        <div class="field">
+          <input
+            type="submit"
+            class="button_active"
+            value="Send Code"
+            id="code"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const emailField = document.getElementById('email');
+      const button = document.getElementById('code');
+      let email = '';
+
+      emailField.addEventListener('change', (e) => {
+        email = e.target.value;
+      });
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        sendResetCode();
+      });
+
+      const sendResetCode = async () => {
+        let userData = {
+          email: email,
+        };
+
+        fetch('http://localhost:3000/api/reset', {
+          method: 'POST',
+          body: JSON.stringify(userData),
+          headers: {
+            'Content-type': 'application/json',
+          },
+        })
+          .then((res) => res.json())
+          .then((result) => {
+            alert(result.message);
+            window.location.replace('resetPassword.html');
+          });
+      };
+    </script>
+  </body>
+</html>
+
+<!-- onclick="location.href='resetPassword.html';" -->

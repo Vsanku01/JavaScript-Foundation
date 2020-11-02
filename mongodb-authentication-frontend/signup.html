@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Signup Form</div>
+      <form action="#">
+        <div class="field">
+          <input type="text" required id="name" />
+          <label>User Name</label>
+        </div>
+        <div class="field">
+          <input type="text" required id="address" />
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="number" required id="phone" />
+          <label>Phone Number</label>
+        </div>
+        <div class="field">
+          <input type="password" required id="password" />
+          <label>Password</label>
+        </div>
+        <div class="field">
+          <input type="submit" value="Signup" id="signup" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const nameField = document.getElementById('name');
+      const addressField = document.getElementById('address');
+      const phoneField = document.getElementById('phone');
+      const passwordField = document.getElementById('password');
+      const button = document.getElementById('signup');
+
+      let userName,
+        email,
+        phone,
+        password = '';
+
+      nameField.addEventListener('change', (e) => {
+        userName = e.target.value;
+        console.log(userName);
+      });
+      addressField.addEventListener('change', (e) => {
+        email = e.target.value;
+        console.log(email);
+      });
+      phoneField.addEventListener('change', (e) => {
+        phone = e.target.value;
+        console.log(phone);
+      });
+      passwordField.addEventListener('change', (e) => {
+        password = e.target.value;
+        console.log(password);
+      });
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (email !== null && password !== null) {
+          registerUser();
+        }
+        alert('Please enter your credentials');
+      });
+
+      const registerUser = async () => {
+        let userData = {
+          name: userName,
+          email: email,
+          phone: phone,
+          password: password,
+        };
+
+        fetch('http://localhost:3000/api/register', {
+          method: 'POST',
+          body: JSON.stringify(userData),
+          headers: {
+            'Content-type': 'application/json',
+          },
+        })
+          .then((res) => res.json())
+          .then((result) => {
+            alert(result.message);
+            window.location.replace('index.html');
+          });
+
+        console.log('Sign Up Data', userData);
+      };
+    </script>
+  </body>
+</html>
