@@ -64,7 +64,7 @@
           password: password,
         };
 
-        fetch('http://localhost:3000/api/login', {
+        fetch('https://mongodb-authentication.herokuapp.com/login', {
           method: 'POST',
           body: JSON.stringify(userData),
           headers: {
