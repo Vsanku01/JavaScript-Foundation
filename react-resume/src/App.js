@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header/Header';
+import Profile from './components/Profile/Profile';
+import Resume from './components/Resume/Resume';
+import './components/styles/style.css';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Welcome to React</h1>
+    <div className='resume'>
+      <Header />
+      <Profile />
+      <Resume />
     </div>
   );
 }
