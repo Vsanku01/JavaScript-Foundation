@@ -8,7 +8,7 @@ const Todo = ({ todo, setTodos, todos }) => {
 
   const completeHandler = () => {
     setTodos(
-      // Mapping all the items and finding the correct item and changing thek completed status of the item
+      // Mapping all the items and finding the correct item and changing the completed status of the item
       todos.map((item) => {
         if (item.id === todo.id) {
           return {
